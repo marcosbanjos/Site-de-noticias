@@ -1,0 +1,45 @@
+body{
+    background: rgba(255, 153, 0, 0.541);
+}
+
+h1{
+    text-align: center;
+}
+
+#header{
+    min-height: 0;
+}
+
+#main :where(.form, .input-search) {
+    display: grid;
+    gap: 7px;
+    margin: 0 150px;
+    color: var(--white);
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+}
+
+
+.input-search :where(input, textarea) {
+    padding: 20px;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid var(--white);
+}
+
+.btn-excluir {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn-excluir:hover {
+    background-color: darkred;
+}
